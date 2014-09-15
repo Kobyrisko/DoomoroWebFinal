@@ -1,0 +1,26 @@
+[
+{
+	"name":"Steve Jobs",
+	"comment":"My job is not to be easy on people. My job is to make them better.",
+	"time":"about 8 months ago",
+	"profileImage":"Images/profileImages/Steve.jpeg"
+},
+{
+	"name":"Bill Gates",
+	"comment": "If you born poor it's not a mistake, If you die poor it's a mistake.",
+	"time":"about 1 year ago",
+	"profileImage":"Images/profileImages/Bill.jpeg"
+},
+{
+	"name":"Mark Zuckerberg",
+	"comment": "Faceook. I have nothing more to add.",
+	"time":"about 5 years ago",
+	"profileImage":"Images/profileImages/Mark.jpg"
+},
+{
+	"name":"Albert Einstain",
+	"comment": "If you can't explain it simply, you don't understand it well enough",
+	"time":"about 1 year ago",
+	"profileImage":"Images/profileImages/Albert.jpeg"
+}
+]

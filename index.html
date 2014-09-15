@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="an opertunity for a position">
+    <meta name="author" content="Koby Riskovich">
+     <title>Doomoro Webpage, Koby Riskovich</title>
+    
+    <!-- FaceBook SDK-->
+	<script src = "js/facebookSDK.js"> </script>
+	<!-- twitter SDK-->
+    <script src = "js/twitterSDK.js"> </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom made CSS by me -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="oInitialize.Initialize()">
+	<!-- NavigationBar-->
+	<div class = "headerClass">
+		<nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                </button>
+                <img class = "navbar-brand" src="Images/DoomoroLogo.png" alt="">
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class = "nav navbar-nav navbar-right" id = "Test">
+                <li class = "dropdown">
+	          	<a href = "#" class="dropdown-toggle" data-toggle="dropdown" id = "collapseMenu"> CATAGORIES <span class="caret"> </span></a>
+	          		<ul class="dropdown-menu" role="menu">
+	            		<li><a href="#">Link1</a></li>
+	            		<li><a href="#">Link 2</a></li>
+	          		</ul>
+        		</li>
+                    <li><a href="#">START DOOING</a></li>
+                    <li><a href="#">BUYER</a></li>
+                    <li><a href="#">SELLER</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                </ul>
+            </div>
+   	 	</nav>
+	</div>
+	<!-- NavigationBar End-->
+	
+	<!-- Right Sidebar-->
+	<aside id = "rightAside">
+		<div class = "personalData"> </div>
+		<div class = "container-fluid">
+			<div class = "row" id ="lowerBar">
+				<div class = "orders">
+					<button type="button" class="btn btn-lg">ORDER NOW</button>
+				</div>
+				<div class = "row">
+					<div class="col-xs-6 col-md-4">
+						<div class = "infoBox" id = "infoBoxLeft">
+							<h4>24 H</h4>
+							<h5><span class="glyphicon glyphicon-time"> </span>Deliver Time</h5>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-4">
+						<div class = "infoBox" id = "infoBoxRight">
+							<h4>15$</h4>
+							<h5><span class="glyphicon glyphicon-tag"></span>Total Cost</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row" id = "sellerDetials">
+					<div class="col-xs-6 col-md-4">
+						<h1><span class="glyphicon glyphicon-tag"> </span></h1>
+					</div>
+		 			<div class="col-xs-6 col-md-4">
+						<h5>80%</h5>
+						<h6>Positive Rating</h6>
+		 			</div>
+		  			<div class="col-xs-6 col-md-4">
+		  				<h5>4</h5>
+						<h6>Vouched</h6>
+		  			</div>
+				</div>
+				<hr />
+				<div class ="row">
+					<h4><b><span class="glyphicon glyphicon-certificate"> </span>  Doo</b>moro Buyer Protection</h4>
+				</div>
+				<hr />
+				<div class ="row">
+					<a href="#" id = "contactDooer"><h4><span class="glyphicon glyphicon-comment" > </span> Contact Dooer</h4></a>
+				</div>
+				
+				<!--Contact Dooer Form default hide opens up in a dialog-->
+				<form role="form" id = "contactDooerForm">
+					<input type = "text" name = "Name" placeholder = "Name" class="form-control"/>
+					<input type = "email" name = "Email" placeholder="Email" class="form-control"/>
+					<textarea name "Description" placeholder = "Description" class="form-control" rows="3"></textarea>
+					<input type = "submit" class="form-control"/>
+				</form>
+			</div>
+		</div>
+	</aside>
+	
+	<!-- Right SideBar End-->
+	
+	<!-- Main Body -->
+	<article id ="mainContent">
+			<h3 id = "headLine"> </h3>	
+			<p id = "department"> in </p>
+			<div class = "works">
+				<img src ='' class = 'picturesClass' id = 'mainImage'>
+				<div class="morePictures">
+					<a href = "#"><img src = "" id = "image1"></a>
+					<a href = "#"><img src = "" id = "image2"></a>
+					<a href = "#"><img src = "" id = "image3"></a>
+					<a href = "#"><img src = "" id = "image4"></a>
+				</div>
+			</div>
+			
+		<nav class="navbar" role="navigation" id = "SocialBar">
+			<ul class="nav navbar-nav">
+				<li><div class="fb-share-button" data-href="https://www.facebook.com/Doomoro" data-layout = 'button_count' data-image='Images/css/headerPicture.png'></div></li>
+				<li><div><a class="twitter-share-button" href="https://twitter.com/share" data-related="twitterdev" data-size="large"  data-count="none"> Tweet </a></div></li>
+				<li class = "navbar-brand"><p><span class = "glyphicon glyphicon-star" id = "remindMeIcon"></span>Remind Me</p></li>
+		</nav>
+		<div class = "description">
+			<p> </p>
+			<p> </p>
+		<a href="#"><h5>See More</h5></a>
+		</div>
+		<div class = "checkPoint">
+			<h5><i class='glyphicon glyphicon-check'></i> Check Point </h5>
+		</div>
+		<div class = "availabilty">
+			<h5><i class='glyphicon glyphicon-cloud'></i> Availabilty<h5>
+		</div>
+		<div class = "buyerInstruction">
+			<h5> <i class='glyphicon glyphicon-plus'></i> Instructions for buyer<h5>
+		</div>
+	
+	<section class ="comments">
+		<h1>Costumer Reviews<hr></h1>
+		<a href = "#"><h5>More Reviews</h5></a>
+	</section>
+	
+	<section class ="userQuestions">
+		<h1>User Questions <hr></h1>
+		<form role = "form" id = "userCommentForm">
+			<input type = "text" class ="form-control" value="Shai Gecelter" readonly />
+			<textarea class ="form-control" id = "userComment" placeholder="Please write a comment"></textarea>
+			<input type = "submit" value = "Submit Comment" class ="form-control"/>
+		</form>
+		<form role = "form" id = "userReplyForm">
+			<input type = "text" class ="form-control" id = "username" value="Shai Gecelter" readonly />
+			<textarea class ="form-control" id = "userReply" placeholder="Please write a comment"></textarea>
+			<input type = "submit" value = "Submit Reply" class ="form-control"/>
+		</form>
+		<a href = "#" id = "addAComment"><h6 >add a comment</h6></a>
+		<a href = "#"><h5>Show More</h5></a>
+	 </section>
+	<section>
+		<h3>My Special Offers... (10$ instead of 15$)</h3>
+		<form role = "form" class = "shareForm">
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="facebook" value="option1">
+			    	<span><img src = "Images/Icons/facebook.png"></span>  Share with 10 Facebookers
+			  	</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="linkedin" value="option2">
+						<span><img src = "Images/Icons/LinkedInIcon.png"></span>  Share with 10 Linkedin friends
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="mail" value="option3" >
+						<span><img src = "Images/Icons/mailIcon.png"></span>  Share with 10 awsome people
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="twitter" value="option3">
+						<span><img src = "Images/Icons/twitterIcon.png"></span>  Tweet 3 times
+				</label>
+			</div>
+			<a href = "#" ><img src="Images/shareAndGet.png" id ="shareAndGetImage"/></a>
+		</form>
+	</section>
+</article>
+<!-- Main Body End -->
+
+<section class  = "moreWorks">
+			<h1>More DOO's by Shai</h1>
+			<div class="container-fluid">
+				<div class = "row">
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img src = "Images/moreWorks/Android1.jpg">
+							<h5>Get a Design a Professional Logo by tommorow</h5>
+						</div>
+					</div>
+				<div class="col-md-3">
+						<div class="thumbnail">
+							<img src = "Images/moreWorks/Apple_Computer_Logo_rainbow.svg.png">
+							<h5>Get a Design a Professional Logo by tommorow</h5>
+						</div>
+					</div>
+				<div class="col-md-3">
+						<div class="thumbnail">
+							<img src = "Images/moreWorks/android-icon.png">
+							<h5>Get a Design a Professional Logo by tommorow</h5>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="thumbnail">
+							<img src = "Images/moreWorks/og.jpg">
+							<h5>Get a Design a Professional Logo by tommorow</h5>
+						</div>
+				</div>
+			</div>
+			</div>
+</section>
+
+	
+<!-- Lower Navigation Bar-->
+<footer id = "lowerNavigationFooter">
+	<li> 
+		<img src = "Images/PaypalLogo.png" class ="logo" id = "paypalLogo"/>
+		<img src="Images/samsungLogo.png" class = "logo">
+		<img src="Images/DLDlogo .png" class = "logo" />
+	</li>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<ul class="nav navbar-nav">
+			<li class ="navbar-brand">
+				<img src = "Images/DoomoroLogo.png">
+			</li> 
+			<li class ="footerMenu navbar-header ">
+				<h5>General</h5>
+				<a href = "#">About Us</a>
+				<a href = "#">Company Policy</a>
+				<a href = "#">Terms of service</a>
+				<a href = "#">Press kit</a>
+			</li>   
+			<li class ="footerMenu navbar-header">
+				<h5>Help</h5>
+				<a href = "#">About Us</a>
+				<a href = "#">Company Policy</a>
+				<a href = "#">Terms of service</a>
+				<a href = "#">Press kit</a>
+			</li>      
+			<li>
+				<form class="navbar-form" role="search">
+			        <div class="form-group">
+			        	<div class="input-group">
+				        	<input type="text" class="form-control" placeholder="I NEED ____ WITHIN 24 HOURS">
+				        	<span class="input-group-btn">
+				        		<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+				        	</span>
+			          </div>
+	          	<br>
+	          	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+	        	</div>
+	      		</form>
+	      	</li>
+		 </ul>
+	</nav>
+	<div class = "socialMediaBar">
+		<ul class="nav navbar-nav">
+			<li><a href = "http://www.doomoro.com/">CONNET WITH DOOMORO</a></li>
+			<li><a href ="https://www.facebook.com/">FaceBook Like</a></li>
+			<li><a href ="https://twitter.com/">Twitter Follow</a></li>
+			<li><a href ="https://www.pinterest.com/">PINTEREST</a></li>
+			<li><a href = "https://www.linkedin.com/">LINKEDIN</a></li>
+			<li><a href = "https://www.paypal.com/">PAYPAL</a></li>
+			<li>&copy; 2013 DOOMORO</li>
+		</ul>
+	</div>
+</footer>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Jquery UI-->
+    	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <!-- Initialize Components -->
+    <script src = "js/Initialize.js"> </script>
+    
+</body>
+
+</html>
